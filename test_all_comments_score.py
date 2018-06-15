@@ -1,4 +1,4 @@
-import train
+import train_all_comments_score
 import comment_preprocessing
 from keras.layers import *
 from keras.preprocessing.sequence import pad_sequences
@@ -9,7 +9,7 @@ weight_file_name = 'model_weights_e35_b1.hdf5'
 
 
 comments, ratings = comment_preprocessing.get_useful_comment_and_rating(commentFileName)
-model = train.build_baseline_model()
+model = train_all_comments_score.build_baseline_model()
 model.load_weights(weight_file_name)
 
 while True:

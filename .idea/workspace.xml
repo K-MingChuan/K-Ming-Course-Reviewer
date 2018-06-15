@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c46fd14-3076-4b75-8ff2-10e80c057be4" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/comment_preprocessing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model_weights_e20_b128.hdf5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model_weights_e35_b1.hdf5" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test_all_comments_score.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/train_all_comments_score.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_all_comments_score_old.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/word_vector_snownlp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jiebas/dict.txt.big" beforeDir="false" afterPath="$PROJECT_DIR$/jiebas/dict.txt.big" afterDir="false" />
@@ -19,11 +22,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="train_all_comments_score.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="train_all_comments_score.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/train_all_comments_score.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="150" column="28" selection-start-line="150" selection-start-column="24" selection-end-line="150" selection-end-column="30" />
+            <state relative-caret-position="308">
+              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="train_all_comments_score_old.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train_all_comments_score_old.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1227">
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -43,25 +54,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="train.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/train.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="test_all_comments_score.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_all_comments_score.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+            <state relative-caret-position="154">
+              <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="37" />
               <folding>
-                <element signature="e#0#12#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -142,8 +141,8 @@
         <option value="$PROJECT_DIR$/word_vector_snownlp.py" />
         <option value="$PROJECT_DIR$/jiebas/jieba_utils.py" />
         <option value="$PROJECT_DIR$/comment_preprocessing.py" />
-        <option value="$PROJECT_DIR$/test_all_comments_score.py" />
         <option value="$PROJECT_DIR$/train.py" />
+        <option value="$PROJECT_DIR$/test_all_comments_score.py" />
       </list>
     </option>
   </component>
@@ -347,12 +346,12 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24804688" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24804688" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.14658849" side_tool="true" weight="0.39955357" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32849163" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4978678" visible="true" weight="0.4960733" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" weight="0.4960733" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32924107" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -366,6 +365,26 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4946695" weight="0.32591623" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" visible="true" weight="0.4960733" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24804688" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4946695" weight="0.32591623" />
+      <window_info anchor="right" id="Data View" order="3" weight="0.32995737" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32849163" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8534115" weight="0.43717277" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32924107" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.14658849" side_tool="true" weight="0.39955357" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -380,17 +399,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/train_all_comments_score.py</url>
-          <line>119</line>
+          <line>44</line>
           <option name="timeStamp" value="123" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/score_and_judgemental_all_comment.py</url>
           <option name="timeStamp" value="124" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/train.py</url>
-          <line>47</line>
-          <option name="timeStamp" value="125" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -404,13 +418,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/io.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="588" column="8" selection-start-line="588" selection-start-column="8" selection-end-line="588" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Python35/Lib/site-packages/keras/layers/advanced_activations.py" />
     <entry file="file://D:/Python35/Lib/site-packages/keras/engine/training.py" />
     <entry file="file://$PROJECT_DIR$/labeled_comments.txt" />
@@ -541,13 +548,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jiebas/dict.txt" />
-    <entry file="file://$PROJECT_DIR$/data/comments_words_repository.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-48337">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/useful_comments_words.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1765">
@@ -669,22 +669,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train_all_comments_score.py">
+    <entry file="file://$PROJECT_DIR$/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="150" column="28" selection-start-line="150" selection-start-column="24" selection-end-line="150" selection-end-column="30" />
+        <state relative-caret-position="66">
+          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_all_comments_score.py">
+    <entry file="file://$PROJECT_DIR$/data/comments_words_repository.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        <state relative-caret-position="132">
+          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_all_comments_score_old.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1227">
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -699,13 +705,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train.py">
+    <entry file="file://$PROJECT_DIR$/test_all_comments_score.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        <state relative-caret-position="154">
+          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="37" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_all_comments_score.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
         </state>
       </provider>
     </entry>
