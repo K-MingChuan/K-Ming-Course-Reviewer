@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c46fd14-3076-4b75-8ff2-10e80c057be4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/transfer_all_comments_sorce.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_all_comments_score.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_all_comments_score.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/word_vector_snownlp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/銘傳金手指爬蟲.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/銘傳金手指爬蟲.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/judgements.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/judgements.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jiebas/dict.txt.big" beforeDir="false" afterPath="$PROJECT_DIR$/jiebas/dict.txt.big" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jiebas/jieba_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/jiebas/jieba_utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,29 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="transfer_all_comments_sorce.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/transfer_all_comments_sorce.py">
+      <file leaf-file-name="train_all_comments_score.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train_all_comments_score.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ratings_new.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/ratings_new.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3322">
-              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="score_and_judgemental_all_comment.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/score_and_judgemental_all_comment.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="36" column="68" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="36" selection-end-column="68" />
+            <state relative-caret-position="311">
+              <caret line="150" column="28" selection-start-line="150" selection-start-column="24" selection-end-line="150" selection-end-column="30" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -47,20 +31,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="judgements.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/judgements.json">
+      <file leaf-file-name="comment_preprocessing.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comment_preprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+            <state relative-caret-position="1496">
+              <caret line="68" column="36" lean-forward="true" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ratings.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/ratings.json">
+      <file leaf-file-name="train.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="66">
+              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_all_comments_score.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_all_comments_score.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/Python36/Lib/site-packages/keras/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="1063" selection-start-line="1063" selection-end-line="1063" />
             </state>
           </provider>
         </entry>
@@ -82,6 +93,14 @@
       <find>上課不准吃東西 筆記本不能太小 不要睡覺 不要第二節上課才到 基本上不會被罵 我1/4沒到期中90以上</find>
       <find>上課很無聊又要一直抄筆記老師不錯</find>
       <find>基本上是爽課，原本不太點名只注重作業，但是曾經有一對系對幾乎沒來，作業都從別人那要</find>
+      <find>大推</find>
+      <find>推</find>
+      <find>推</find>
+      <find>不要</find>
+      <find>A</find>
+      <find>及格</find>
+      <find>對</find>
+      <find>爛</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -110,26 +129,36 @@
         <option value="$PROJECT_DIR$/word_preprocessing.py" />
         <option value="$PROJECT_DIR$/label_all_comments.py" />
         <option value="$PROJECT_DIR$/jieba/jieba_utils.py" />
-        <option value="$PROJECT_DIR$/jiebas/jieba_utils.py" />
         <option value="$PROJECT_DIR$/train_RNN_by_word2vec.py" />
         <option value="$PROJECT_DIR$/word2vec/word_vector_utils.py" />
-        <option value="$PROJECT_DIR$/train_RNN_by_n_of_words.py" />
         <option value="$PROJECT_DIR$/transfer_all_comments_sorce.py" />
         <option value="$PROJECT_DIR$/data/judgements.json" />
+        <option value="$PROJECT_DIR$/snow.py" />
+        <option value="$PROJECT_DIR$/data/comments_words_repository.txt" />
+        <option value="$PROJECT_DIR$/jiebas/dict.txt" />
+        <option value="$PROJECT_DIR$/train_all_comments_score.py" />
+        <option value="$PROJECT_DIR$/train_RNN_by_n_of_words.py" />
+        <option value="$PROJECT_DIR$/comment_preprocessing" />
+        <option value="$PROJECT_DIR$/word_vector_snownlp.py" />
+        <option value="$PROJECT_DIR$/jiebas/jieba_utils.py" />
+        <option value="$PROJECT_DIR$/comment_preprocessing.py" />
+        <option value="$PROJECT_DIR$/test_all_comments_score.py" />
+        <option value="$PROJECT_DIR$/train.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="686" />
-    <option name="y" value="157" />
+    <option name="x" value="685" />
+    <option name="y" value="155" />
     <option name="width" value="1400" />
-    <option name="height" value="1002" />
+    <option name="height" value="1005" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -161,7 +190,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -169,17 +197,17 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\NativeGit\K-Ming-Course-Reviewer\word2vec" />
+      <recent name="D:\NativeGit\K-Ming-Course-Reviewer\data" />
+      <recent name="D:\NativeGit\Ming-Chuang-GoldFinger-Training" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\NativeGit\K-Ming-Course-Reviewer\jiebas" />
       <recent name="D:\NativeGit\K-Ming-Course-Reviewer\word2vec" />
       <recent name="D:\NativeGit\K-Ming-Course-Reviewer\crawlers" />
       <recent name="D:\NativeGit\K-Ming-Course-Reviewer\jieba" />
       <recent name="D:\NativeGit\K-Ming-Course-Reviewer\data" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\NativeGit\K-Ming-Course-Reviewer\word2vec" />
-      <recent name="D:\NativeGit\K-Ming-Course-Reviewer\data" />
-      <recent name="D:\NativeGit\Ming-Chuang-GoldFinger-Training" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -194,8 +222,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.transfer_all_comments_sorce">
-    <configuration name="jieba_utils (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.train">
+    <configuration name="test_all_comments_score" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="銘傳金手指爬蟲" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -203,17 +231,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jiebas" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jiebas/jieba_utils.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_all_comments_score.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="jieba_utils" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="銘傳金手指爬蟲" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -221,11 +249,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jieba" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jieba/jieba_utils.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -249,7 +277,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="train_RNN_by_n_of_words" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="train_all_comments_score" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="銘傳金手指爬蟲" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -261,13 +289,13 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_RNN_by_n_of_words.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_all_comments_score.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="transfer_all_comments_sorce" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="word_vector_snownlp" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="銘傳金手指爬蟲" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -279,7 +307,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/transfer_all_comments_sorce.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/word_vector_snownlp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -287,18 +315,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.train_NN_by_word2vec" />
-      <item itemvalue="Python.jieba_utils" />
-      <item itemvalue="Python.jieba_utils (1)" />
-      <item itemvalue="Python.train_RNN_by_n_of_words" />
-      <item itemvalue="Python.transfer_all_comments_sorce" />
+      <item itemvalue="Python.train_all_comments_score" />
+      <item itemvalue="Python.word_vector_snownlp" />
+      <item itemvalue="Python.train" />
+      <item itemvalue="Python.test_all_comments_score" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.transfer_all_comments_sorce" />
-        <item itemvalue="Python.train_RNN_by_n_of_words" />
+        <item itemvalue="Python.train" />
+        <item itemvalue="Python.test_all_comments_score" />
+        <item itemvalue="Python.train_all_comments_score" />
+        <item itemvalue="Python.word_vector_snownlp" />
         <item itemvalue="Python.train_NN_by_word2vec" />
-        <item itemvalue="Python.jieba_utils (1)" />
-        <item itemvalue="Python.jieba_utils" />
       </list>
     </recent_temporary>
   </component>
@@ -317,17 +345,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14713542" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24804688" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.14658849" side_tool="true" weight="0.39955357" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" weight="0.5366492" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32849163" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4978678" visible="true" weight="0.4960733" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32924107" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8534115" weight="0.3988827" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8534115" weight="0.43717277" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -335,7 +364,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4946695" weight="0.32849163" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4946695" weight="0.32591623" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -345,104 +374,36 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/word_preprocessing.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="89" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/label_all_comments.py</url>
           <line>26</line>
           <option name="timeStamp" value="94" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/train_all_comments_score.py</url>
+          <line>119</line>
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/score_and_judgemental_all_comment.py</url>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/train.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="100" />
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="133" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/words_output.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36792">
-          <caret line="1533" column="2" lean-forward="true" selection-start-line="1533" selection-start-column="2" selection-end-line="1533" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train_RNN_by_n_of_words.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3096">
-          <caret line="135" column="21" lean-forward="true" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawlers/older_mingchuan_crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="75" column="59" selection-start-line="75" selection-start-column="59" selection-end-line="75" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comments_labeling.py" />
-    <entry file="file://$PROJECT_DIR$/train_RNN_by_n_of_words.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2520">
-          <caret line="105" column="29" lean-forward="true" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawlers/older_mingchuan_crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="75" column="59" lean-forward="true" selection-start-line="75" selection-start-column="59" selection-end-line="75" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comments_labeling.py" />
-    <entry file="file://$PROJECT_DIR$/train_RNN_by_n_of_words.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2472">
-          <caret line="103" column="29" lean-forward="true" selection-start-line="102" selection-start-column="33" selection-end-line="103" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python35/Lib/urllib/request.py" />
-    <entry file="file://D:/Python35/Lib/multiprocessing/pool.py" />
-    <entry file="file://D:/Python35/Lib/multiprocessing/context.py" />
-    <entry file="file://D:/Python35/Lib/multiprocessing/popen_spawn_win32.py" />
-    <entry file="file://D:/Python35/Lib/multiprocessing/spawn.py" />
-    <entry file="file://D:/Python35/Lib/site-packages/bs4/element.py" />
-    <entry file="file://D:/Python35/Lib/json/encoder.py" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python35/Lib/site-packages/keras/models.py" />
-    <entry file="file://D:/Python35/Lib/site-packages/keras/layers/core.py" />
-    <entry file="file://$PROJECT_DIR$/jiebas/dict.txt.big">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="37589" column="2" selection-start-line="37589" selection-end-line="37589" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python35/Lib/site-packages/keras/backend/tensorflow_backend.py" />
-    <entry file="file://$PROJECT_DIR$/course.json" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/io.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -450,20 +411,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jiebas/stop_words.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1512" />
-      </provider>
-    </entry>
     <entry file="file://D:/Python35/Lib/site-packages/keras/layers/advanced_activations.py" />
     <entry file="file://D:/Python35/Lib/site-packages/keras/engine/training.py" />
-    <entry file="file://$PROJECT_DIR$/words_output.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="1390" column="2" selection-start-line="1390" selection-start-column="2" selection-end-line="1390" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/labeled_comments.txt" />
     <entry file="file://$PROJECT_DIR$/data/old_comments.txt">
       <provider selected="true" editor-type-id="text-editor" />
@@ -478,23 +427,10 @@
     <entry file="file://$PROJECT_DIR$/crawlers/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/word_preprocessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crawlers/suankho_crawler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -505,68 +441,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1672">
           <caret line="81" column="31" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://D:/Python35/Lib/site-packages/jieba/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/jiebas/jieba_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train_RNN_by_word2vec.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Python35/Lib/site-packages/smart_open/smart_open_lib.py" />
-    <entry file="file://$PROJECT_DIR$/word2vec/word_vector_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train_RNN_by_n_of_words.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1606">
-          <caret line="73" column="24" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/label_all_comments.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/all_comments.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="677" column="7" selection-start-line="677" selection-start-column="7" selection-end-line="677" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/reviews.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="682">
@@ -583,39 +462,250 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/ratings.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
+        <state relative-caret-position="242">
           <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/score_and_judgemental_all_comment.py">
+    <entry file="file://$PROJECT_DIR$/data/judgements.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="36" column="68" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="36" selection-end-column="68" />
+        <state relative-caret-position="880">
+          <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/words_output.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="1390" column="2" selection-start-line="1390" selection-start-column="2" selection-end-line="1390" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/label_all_comments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/ratings_new.json">
+    <entry file="file://$PROJECT_DIR$/data/all_comments.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3322">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        <state relative-caret-position="-14070">
+          <caret line="677" column="7" selection-start-line="677" selection-start-column="7" selection-end-line="677" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/judgements.json">
+    <entry file="file://D:/Python36/Lib/site-packages/h5py/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+        <state relative-caret-position="126">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python36/Lib/site-packages/smart_open/smart_open_lib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="670" selection-start-line="670" selection-end-line="670" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/transfer_all_comments_sorce.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        <state relative-caret-position="176">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python36/Lib/site-packages/keras/engine/training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2024">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python36/Lib/site-packages/gensim/models/keyedvectors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5962">
+          <caret line="273" selection-start-line="273" selection-end-line="273" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jiebas/dict.txt" />
+    <entry file="file://$PROJECT_DIR$/data/comments_words_repository.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48337">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/useful_comments_words.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1765">
+          <caret line="770" column="2" selection-start-line="770" selection-end-line="770" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/useful_comments_words_new.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/ratings_new.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment_preprocessing" />
+    <entry file="file://$PROJECT_DIR$/score_and_judgemental_all_comment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="2" column="38" lean-forward="true" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_preprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="758">
+          <caret line="45" column="33" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jiebas/dict.txt.big">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1032">
+          <caret line="35300" column="8" selection-start-line="35300" selection-start-column="8" selection-end-line="35300" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jiebas/stop_words.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jiebas/jieba_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_vector_snownlp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python36/Lib/site-packages/numpy/core/numeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="491" selection-start-line="491" selection-end-line="491" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="1657" selection-start-line="1657" selection-end-line="1657" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python36/Lib/site-packages/gensim/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="1196" selection-start-line="1196" selection-end-line="1196" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python36/Lib/site-packages/keras/preprocessing/sequence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="35" column="23" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word2vec/word_vector_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="30" selection-start-line="30" selection-end-line="30" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_RNN_by_word2vec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_RNN_by_n_of_words.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python36/Lib/site-packages/keras/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="1063" selection-start-line="1063" selection-end-line="1063" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_all_comments_score.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="150" column="28" selection-start-line="150" selection-start-column="24" selection-end-line="150" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_all_comments_score.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment_preprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="68" column="36" lean-forward="true" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
