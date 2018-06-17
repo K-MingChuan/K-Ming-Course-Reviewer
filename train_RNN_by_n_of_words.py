@@ -12,20 +12,27 @@ def num_to_one_hot(num):
     return a
 
 
-def build_up_word_set(comments):
-    wordset = set()
-    for comment in comments:
-        words = jieba_utils.cut(comment, cut_all=True)
-        wordset.update(words)
-    return wordset
+def build_up_word_list(comments, word_list_file_name=None, output_file_name=None):
+    if word_list_file_name:
+        with open(word_list_file_name, 'r', encoding='utf-8') as fr:
+            word_list = [line.strip() for line in fr.readlines() if len(line.strip()) != 0]
+    else:
+        wordset = set()
+        for comment in comments:
+            words = jieba_utils.cut(comment, cut_all=True)
+            wordset.update(words)
+        word_list = list(wordset)
+
+    if output_file_name:
+        with open(output_file_name, 'w+', encoding='utf-8') as fw:
+            for word in word_list:
+                fw.write(word + '\n')
+
+    return word_list
 
 
-def build_up_word_index_dict(wordset):
-    words = list(wordset)
-    word_index_dict = {}
-    for i in range(len(words)):
-        word_index_dict[words[i]] = i
-    return word_index_dict
+def build_up_word_index_dict(word_list):
+    return dict((word, index) for index, word in enumerate(word_list))
 
 
 def comment_to_data(comment, word_index_dict):
@@ -68,8 +75,8 @@ with open('data/reviews.json', 'r', encoding='utf-8') as f:
 comments = reviews.keys()
 data = []
 
-wordset = build_up_word_set(comments)
-word_index_dict = build_up_word_index_dict(wordset)
+word_list = build_up_word_list(comments)
+word_index_dict = build_up_word_index_dict(word_list)
 
 for comment in comments:
     data.append(comment_to_data(comment, word_index_dict))
@@ -95,7 +102,7 @@ best_score = -1
 best_model = None
 for i in range(5):
     print("Round ", i)
-    model = build_baseline_model(len(wordset))
+    model = build_baseline_model(len(word_list))
     model.fit(train_data, train_labels, epochs=epoch, batch_size=batch_size)
     model.summary()
     score = model.evaluate(test_data, test_labels, batch_size=batch_size)
