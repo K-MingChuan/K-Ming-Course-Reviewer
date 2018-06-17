@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c46fd14-3076-4b75-8ff2-10e80c057be4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/comment_preprocessing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model_weights_e20_b128.hdf5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model_weights_e35_b1.hdf5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_all_comments_score.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train_all_comments_score.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train_all_comments_score_old.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/word_vector_snownlp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jiebas/dict.txt.big" beforeDir="false" afterPath="$PROJECT_DIR$/jiebas/dict.txt.big" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jiebas/jieba_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/jiebas/jieba_utils.py" afterDir="false" />
-    </list>
+    <list default="true" id="5c46fd14-3076-4b75-8ff2-10e80c057be4" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +14,8 @@
       <file leaf-file-name="train_all_comments_score.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/train_all_comments_score.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+            <state relative-caret-position="220">
+              <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -344,7 +333,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24804688" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -717,8 +705,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/train_all_comments_score.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        <state relative-caret-position="220">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
         </state>
       </provider>
     </entry>
