@@ -14,8 +14,8 @@ word_vector_size = word_vector_utils.get_word_vector_size()
 
 def build_baseline_model(feature_size):
     model = Sequential()
-    model.add(LSTM(3000, input_shape=(max_len, feature_size), return_sequences=True))
-    model.add(LSTM(3000))
+    model.add(LSTM(200, input_shape=(max_len, feature_size), return_sequences=True))
+    model.add(LSTM(200))
     model.add(Dropout(0.2))
     model.add(Dense(1))
     model.compile(loss='mse', optimizer='adam', metrics=['mae'])
@@ -38,7 +38,9 @@ def save_comments_words_set(comments_words_set):
 if __name__ == '__main__':
     comments, ratings = comment_preprocessing.get_useful_comment_and_rating(commentFileName)
 
-    comments_word_list = comment_preprocessing.build_up_word_list(comments, output_file_name='word_list.txt')
+    comments_word_list = comment_preprocessing.build_up_word_list(comments,
+                                                                  word_list_file_name='word_list.txt',
+                                                                  output_file_name='word_list.txt')
     word_index_dict = comment_preprocessing.build_up_word_index_dict(comments_word_list)
 
     comments = [comment_preprocessing.comment_to_one_hot(comment, word_index_dict) for comment in comments]
@@ -55,7 +57,7 @@ if __name__ == '__main__':
     print("Test Data's shape: ", test_data.shape)
     print("Test Labels' shape: ", test_labels.shape)
 
-    batch_size = 1
+    batch_size = 32
     epoch = 30
     model = build_baseline_model(train_data.shape[2])
     model.summary()
