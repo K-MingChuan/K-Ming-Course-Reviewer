@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c46fd14-3076-4b75-8ff2-10e80c057be4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/word2vec.model" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/word2vec.model.trainables.syn1neg.npy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/word2vec.model.wv.vectors.npy" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/train_MLP_by_n_of_words.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jiebas/jieba_utils.py" afterPath="$PROJECT_DIR$/jiebas/jieba_utils.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/train_RNN_by_n_of_words.py" afterPath="$PROJECT_DIR$/train_RNN_by_n_of_words.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/train_RNN_by_word2vec.py" afterPath="$PROJECT_DIR$/train_RNN_by_word2vec.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/word2vec/word_vector_utils.py" afterPath="$PROJECT_DIR$/word2vec/word_vector_utils.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/reviews.json" afterPath="$PROJECT_DIR$/data/reviews.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/label_all_comments.py" afterPath="$PROJECT_DIR$/label_all_comments.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="train_RNN_by_n_of_words.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="train_RNN_by_n_of_words.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train_RNN_by_n_of_words.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="73" column="24" lean-forward="true" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
+            <state relative-caret-position="317">
+              <caret line="91" column="15" lean-forward="true" selection-start-line="91" selection-start-column="15" selection-end-line="91" selection-end-column="15" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -32,74 +28,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jieba_utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jiebas/jieba_utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="word_vector_utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/word2vec/word_vector_utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="all_comments.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/all_comments.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="677" column="7" lean-forward="true" selection-start-line="677" selection-start-column="7" selection-end-line="677" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="train_RNN_by_word2vec.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/train_RNN_by_word2vec.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-871">
-              <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="smart_open_lib.py" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Python35/Lib/site-packages/smart_open/smart_open_lib.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="670" column="0" lean-forward="false" selection-start-line="670" selection-start-column="0" selection-end-line="670" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="older_mingchuan_crawler.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crawlers/older_mingchuan_crawler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1829">
-              <caret line="81" column="31" lean-forward="false" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crawlers/__init__.py">
+      <file leaf-file-name="train_MLP_by_n_of_words.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/train_MLP_by_n_of_words.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -108,11 +38,65 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="reviews.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/reviews.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="6974" lean-forward="false" selection-start-line="0" selection-start-column="6974" selection-end-line="0" selection-end-column="6974" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="word_vector_utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/word2vec/word_vector_utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="all_comments.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/all_comments.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16248">
+              <caret line="677" column="7" lean-forward="false" selection-start-line="677" selection-start-column="7" selection-end-line="677" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="train_RNN_by_word2vec.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train_RNN_by_word2vec.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="older_mingchuan_crawler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crawlers/older_mingchuan_crawler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1584">
+              <caret line="71" column="53" lean-forward="false" selection-start-line="71" selection-start-column="53" selection-end-line="71" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="suankho_crawler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crawlers/suankho_crawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="25" column="15" lean-forward="false" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="23" />
+            <state relative-caret-position="1152">
+              <caret line="52" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -123,8 +107,20 @@
       <file leaf-file-name="label_all_comments.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/label_all_comments.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="29" column="50" lean-forward="true" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+            <state relative-caret-position="168">
+              <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="word_preprocessing.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/word_preprocessing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -175,18 +171,18 @@
         <option value="$PROJECT_DIR$/labeling_all_comments.py" />
         <option value="$PROJECT_DIR$/process_all_comments.py" />
         <option value="$PROJECT_DIR$/word_preprocessing.py" />
-        <option value="$PROJECT_DIR$/label_all_comments.py" />
         <option value="$PROJECT_DIR$/jieba/jieba_utils.py" />
         <option value="$PROJECT_DIR$/jiebas/jieba_utils.py" />
         <option value="$PROJECT_DIR$/train_RNN_by_word2vec.py" />
         <option value="$PROJECT_DIR$/word2vec/word_vector_utils.py" />
         <option value="$PROJECT_DIR$/train_RNN_by_n_of_words.py" />
+        <option value="$PROJECT_DIR$/label_all_comments.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="687" />
-    <option name="y" value="158" />
+    <option name="x" value="65" />
+    <option name="y" value="106" />
     <option name="width" value="1400" />
     <option name="height" value="1001" />
   </component>
@@ -245,17 +241,18 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\NativeGit\K-Ming-Course-Reviewer" />
+      <recent name="D:\NativeGit\K-Ming-Course-Reviewer\word2vec" />
+      <recent name="D:\NativeGit\K-Ming-Course-Reviewer\data" />
+      <recent name="D:\NativeGit\Ming-Chuang-GoldFinger-Training" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\NativeGit\K-Ming-Course-Reviewer\jiebas" />
       <recent name="D:\NativeGit\K-Ming-Course-Reviewer\word2vec" />
       <recent name="D:\NativeGit\K-Ming-Course-Reviewer\crawlers" />
       <recent name="D:\NativeGit\K-Ming-Course-Reviewer\jieba" />
       <recent name="D:\NativeGit\K-Ming-Course-Reviewer\data" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\NativeGit\K-Ming-Course-Reviewer\word2vec" />
-      <recent name="D:\NativeGit\K-Ming-Course-Reviewer\data" />
-      <recent name="D:\NativeGit\Ming-Chuang-GoldFinger-Training" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -270,7 +267,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.train_RNN_by_n_of_words">
+  <component name="RunManager" selected="Python.labeling_all_comments">
     <configuration name="jieba_utils (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -365,11 +362,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.train_RNN_by_n_of_words" />
-        <item index="1" class="java.lang.String" itemvalue="Python.train_NN_by_word2vec" />
-        <item index="2" class="java.lang.String" itemvalue="Python.jieba_utils (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.jieba_utils" />
-        <item index="4" class="java.lang.String" itemvalue="Python.labeling_all_comments" />
+        <item index="0" class="java.lang.String" itemvalue="Python.labeling_all_comments" />
+        <item index="1" class="java.lang.String" itemvalue="Python.train_RNN_by_n_of_words" />
+        <item index="2" class="java.lang.String" itemvalue="Python.train_NN_by_word2vec" />
+        <item index="3" class="java.lang.String" itemvalue="Python.jieba_utils (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Python.jieba_utils" />
       </list>
     </recent_temporary>
   </component>
@@ -388,12 +385,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14765458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13272922" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39955357" sideWeight="0.14658849" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849163" sideWeight="0.4946695" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4837989" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.074860334" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849163" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -406,6 +403,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849163" sideWeight="0.4946695" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -431,12 +429,13 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/comments_labeling.py" />
     <entry file="file://$PROJECT_DIR$/train_RNN_by_n_of_words.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -445,7 +444,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -470,7 +471,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3096">
           <caret line="135" column="21" lean-forward="true" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -489,7 +492,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2520">
           <caret line="105" column="29" lean-forward="true" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -508,7 +513,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2472">
           <caret line="103" column="29" lean-forward="true" selection-start-line="102" selection-start-column="33" selection-end-line="103" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -625,14 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/reviews.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20707" lean-forward="false" selection-start-line="0" selection-start-column="20707" selection-end-line="0" selection-end-column="20707" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/words_output.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -645,15 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/suankho_courses.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="0" column="2499" lean-forward="false" selection-start-line="0" selection-start-column="2499" selection-end-line="0" selection-end-column="2499" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -662,7 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -670,7 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -678,37 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/word_preprocessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawlers/suankho_crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="25" column="15" lean-forward="false" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/label_all_comments.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="29" column="50" lean-forward="true" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -716,17 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawlers/older_mingchuan_crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1829">
-          <caret line="81" column="31" lean-forward="false" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -734,23 +680,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="488" column="0" lean-forward="false" selection-start-line="488" selection-start-column="0" selection-end-line="488" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jiebas/jieba_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="384">
           <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/train_RNN_by_word2vec.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-871">
+        <state relative-caret-position="48">
           <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -760,35 +702,97 @@
     </entry>
     <entry file="file://D:/Python35/Lib/site-packages/smart_open/smart_open_lib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
+        <state relative-caret-position="15768">
           <caret line="670" column="0" lean-forward="false" selection-start-line="670" selection-start-column="0" selection-end-line="670" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/word2vec/word_vector_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="552">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/suankho_courses.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="0" column="1209" lean-forward="false" selection-start-line="0" selection-start-column="1206" selection-end-line="0" selection-end-column="1209" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/label_all_comments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_preprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/all_comments.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="677" column="7" lean-forward="true" selection-start-line="677" selection-start-column="7" selection-end-line="677" selection-end-column="7" />
+        <state relative-caret-position="16248">
+          <caret line="677" column="7" lean-forward="false" selection-start-line="677" selection-start-column="7" selection-end-line="677" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawlers/suankho_crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawlers/older_mingchuan_crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1584">
+          <caret line="71" column="53" lean-forward="false" selection-start-line="71" selection-start-column="53" selection-end-line="71" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/reviews.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="6974" lean-forward="false" selection-start-line="0" selection-start-column="6974" selection-end-line="0" selection-end-column="6974" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/train_RNN_by_n_of_words.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="73" column="24" lean-forward="true" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
+        <state relative-caret-position="317">
+          <caret line="91" column="15" lean-forward="true" selection-start-line="91" selection-start-column="15" selection-end-line="91" selection-end-column="15" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_MLP_by_n_of_words.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

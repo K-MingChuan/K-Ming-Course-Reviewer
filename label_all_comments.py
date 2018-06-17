@@ -5,7 +5,7 @@ from word_preprocessing import load_all_comments
 comments = set([cm.strip() for cm in load_all_comments()])
 
 # reviews expected to be a dict with { comment text: rating to the class }
-REVIEWS_FILE_NAME = 'data/reviews.json'
+REVIEWS_FILE_NAME = 'data/scoring_data.json'
 
 with open(REVIEWS_FILE_NAME, 'r+', encoding='utf-8') as fr:
     reviews = json.load(fr)
