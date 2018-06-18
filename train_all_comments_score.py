@@ -36,21 +36,29 @@ def save_comments_words_set(comments_words_set):
 
 
 if __name__ == '__main__':
-    comments, ratings = comment_preprocessing.get_useful_comment_and_rating(commentFileName)
+    comments, ratings = comment_preprocessing.get_judgemental_comments_and_rating(commentFileName)
 
     comments_word_list = comment_preprocessing.build_up_word_list(comments,
                                                                   word_list_file_name='word_list.txt',
                                                                   output_file_name='word_list.txt')
     word_index_dict = comment_preprocessing.build_up_word_index_dict(comments_word_list)
 
-    comments = [comment_preprocessing.comment_to_one_hot(comment, word_index_dict) for comment in comments]
 
-    trainAmount = int(len(comments) * 0.7)
-    comments = pad_sequences(comments, maxlen=max_len, dtype='float32')
-    train_data = np.array(comments[0:trainAmount])
-    train_labels = np.array(ratings[0:trainAmount])
-    test_data = np.array(comments[trainAmount:])
-    test_labels = np.array(ratings[trainAmount:])
+    data = [comment_preprocessing.comment_to_one_hot(comment, word_index_dict) for comment in comments]
+
+    # shuffle the comments and rating
+    data = pad_sequences(data, maxlen=max_len, dtype='float32')
+    ratings = np.array(ratings)
+    random_mask = np.arange(len(data))
+    np.random.shuffle(random_mask)
+    data = data[random_mask]
+    ratings = ratings[random_mask]
+
+    trainAmount = int(len(data) * 0.7)
+    train_data = data[0:trainAmount]
+    train_labels = ratings[0:trainAmount]
+    test_data = data[trainAmount:]
+    test_labels = ratings[trainAmount:]
 
     print("Train Data's shape: ", train_data.shape)
     print("Train Labels' shape: ", train_labels.shape)

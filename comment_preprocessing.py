@@ -70,12 +70,8 @@ def comment_to_one_hot(comment, word_index_dict):
     return data
 
 
-def get_useful_comment_and_rating(commentFileName):
+def get_judgemental_comments_and_rating(commentFileName):
     comments_json = read_file(commentFileName)
-    comments = list()
-    ratings = list()
-    for comment, rating in comments_json.items():
-        if rating != -1:
-            comments.append(comment)
-            ratings.append(rating)
+    comments = [comment for comment, rating in comments_json.items() if rating != -1]
+    ratings = [rating for comment, rating in comments_json.items() if rating != -1]
     return comments, ratings
