@@ -16,20 +16,21 @@ word_vector_size = word_vector_utils.get_word_vector_size()
 def build_baseline_model(word_count):
     model = Sequential()
     model.add(Embedding(word_count, 400, input_length=max_seq_len))
-    model.add(LSTM(1500, input_shape=(max_seq_len, 400), return_sequences=True, dropout=0.3))
-    model.add(LSTM(1500, input_shape=(max_seq_len, 400), dropout=0.3))
+    model.add(LSTM(400, input_shape=(max_seq_len, 400), return_sequences=True, dropout=0.3))
+    model.add(LSTM(400, input_shape=(max_seq_len, 400), dropout=0.3))
     model.add(Dense(1))
     model.compile(loss='mse', optimizer='adam', metrics=['mae'])
     return model
 
 
 def train_and_save_model(model, data, labels, epoch=20, batch_size=128):
-    file_name = "n_of_words_1500_2lstm_e{}_b{}".format(epoch, batch_size)
+    file_name = "n_of_words_800_2lstm_e{}_b{}".format(epoch, batch_size)
     checkpoint = ModelCheckpoint(file_name + '.hdf5')
     callbacks_list = [checkpoint]
     history = model.fit(data, labels, epochs=epoch, batch_size=batch_size, callbacks=callbacks_list)
     with open(file_name + '.pickle', 'wb') as file_pi:
         pickle.dump(history.history, file_pi)
+
 
 def save_comments_words_set(comments_words_set):
     with open('comments_words_set.txt', 'w+', encoding='utf-8') as f:

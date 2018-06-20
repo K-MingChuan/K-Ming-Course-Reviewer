@@ -6,7 +6,7 @@ from keras.preprocessing.sequence import pad_sequences
 
 max_len = 100
 commentFileName = 'data/ratings_new'
-model_file_name = 'n_of_words_1500_2lstm_e50_b32.hdf5'
+model_file_name = 'n_of_words_800_2lstm_e50_b32.hdf5'
 
 
 comments, ratings = comment_preprocessing.get_judgemental_comments_and_rating(commentFileName)
