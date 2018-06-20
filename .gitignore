@@ -164,3 +164,4 @@ fabric.properties
 
 *.hdf5
 *.h5
+*.pickle
