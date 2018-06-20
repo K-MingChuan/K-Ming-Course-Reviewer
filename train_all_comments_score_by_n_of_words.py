@@ -36,7 +36,7 @@ def save_comments_words_set(comments_words_set):
 
 
 if __name__ == '__main__':
-    comments, ratings = comment_preprocessing.get_useful_comment_and_rating(commentFileName)
+    comments, ratings = comment_preprocessing.get_judgemental_comments_and_rating(commentFileName)
 
     comments_word_list = comment_preprocessing.build_up_word_list(comments,
                                                                   word_list_file_name='word_list.txt',

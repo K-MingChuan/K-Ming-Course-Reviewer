@@ -1,4 +1,3 @@
-import train_all_comments_score_by_n_of_words
 import comment_preprocessing
 from keras.models import load_model
 from keras.layers import *
@@ -9,7 +8,7 @@ commentFileName = 'data/ratings_new'
 model_file_name = 'model_weights_e30_b32.hdf5'
 
 
-comments, ratings = comment_preprocessing.get_useful_comment_and_rating(commentFileName)
+comments, ratings = comment_preprocessing.get_judgemental_comments_and_rating(commentFileName)
 model = load_model(model_file_name)
 
 while True:
