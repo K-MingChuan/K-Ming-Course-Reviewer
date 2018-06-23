@@ -21,7 +21,7 @@ def comment_to_word_vectors(comment):
 
 
 def comment_to_n_of_words(comment):
-    return jieba_utils.cut(comment, cut_all=True)
+    return jieba_utils.cut(comment)
 
 
 def word_to_vectors(word):
@@ -38,7 +38,7 @@ def build_up_word_list(comments, word_list_file_name=None, output_file_name=None
         wordset = set()
         print('No word list file specified, creating new word list.')
         for comment in comments:
-            words = jieba_utils.cut(comment, cut_all=True)
+            words = jieba_utils.cut(comment)
             wordset.update(words)
         word_list = list(wordset)
 
@@ -58,7 +58,7 @@ def build_up_word_index_dict(word_list):
 
 def comment_to_one_hot(comment, word_index_dict):
     data = list()
-    words = jieba_utils.cut(comment, cut_all=True)
+    words = jieba_utils.cut(comment)
     for word in words:
         data_one_hot = np.zeros(len(word_index_dict) + 1)
         if word in word_index_dict:
