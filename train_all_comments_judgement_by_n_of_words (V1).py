@@ -17,8 +17,9 @@ max_seq_len = 150
 
 """## 預處理"""
 
+
 def readFile():
-    with open("judgements.json", 'r', encoding='utf-8') as f:
+    with open("data/judgements.json", 'r', encoding='utf-8') as f:
         judgement = json.load(f)
     return judgement
 
@@ -47,8 +48,8 @@ def words2Vector(comments, word_dataset):
     for comment in comments:
         jieba_words = jieba.cut(comment)
         words = [word for word in jieba_words
-                     if len(word.strip()) != 0]
-        
+                 if len(word.strip()) != 0]
+
         vectors = defaultdict(float)
         for word in word_dataset:
             vectors[word] += words.count(word)
@@ -65,7 +66,7 @@ def comment_to_indices(comment, word_to_index):
     indices = []
     size = len(word_to_index)
     words = jieba.cut(comment)
-    #print('Comment: {}\n Terms: {}'.format(comment, ','.join(words)))
+    # print('Comment: {}\n Terms: {}'.format(comment, ','.join(words)))
     for word in words:
         if word in word_to_index:
             indices.append(word_to_index[word])
@@ -80,10 +81,10 @@ def comment_to_one_hot(comment, word_dataset):
     vectors = defaultdict(float)
 
     for word in word_dataset:
-        #vectors[word] += jieba_words.count(word)
+        # vectors[word] += jieba_words.count(word)
         vectors[word] = 1
     word_vector = [w for w in vectors.values()]
-    
+
     return word_vector
 
 
@@ -91,24 +92,24 @@ def judge_to_one_hot(judgements):
     return [[1, 0] if j == 0 else [0, 1] for j in judgements]
 
 
-"""# 模型建立"""
 def build_baseline_model(word_count):
     model = Sequential()
-    model.add(Embedding(word_count, 400, input_length=max_seq_len))
-    model.add(LSTM(1500, input_shape=(max_seq_len, 400), return_sequences=True, recurrent_dropout=0.5))
-    model.add(LSTM(1500, input_shape=(max_seq_len, 400), recurrent_dropout=0.5))
+    model.add(Embedding(word_count, 600, input_length=max_seq_len))
+    model.add(LSTM(1500, input_shape=(max_seq_len, 400), return_sequences=True, dropout=0.3, recurrent_dropout=0.1))
+    model.add(LSTM(1500, dropout=0.3, recurrent_dropout=0.1))
     model.add(Dense(2))
     model.add(Activation('softmax'))
-    model.compile(loss='binary_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
+    model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
     return model
 
+
 def train_and_save_model(model, data, labels, epoch=20, batch_size=128):
-    #filepath = "model_weights_e{}_b{}.hdf5".format(epoch, batch_size)
-    #checkpoint = ModelCheckpoint(filepath)
-    #callbacks_list = [checkpoint]
-    #model.fit(data, labels, epochs=epoch, batch_size=batch_size, callbacks=callbacks_list)
-    model.fit(data, labels, epochs=epoch, batch_size=batch_size)
-    
+    filepath = "judgemental_model_weights_e{}_b{}.hdf5".format(epoch, batch_size)
+    checkpoint = ModelCheckpoint(filepath)
+    callbacks_list = [checkpoint]
+    model.fit(data, labels, epochs=epoch, batch_size=batch_size, callbacks=callbacks_list)
+
+
 def test_model(comments):
     while True:
         comment = input("評論: ")
@@ -116,37 +117,37 @@ def test_model(comments):
         comment = comment_to_indices(comment, word_index_dict)
 
         comment = pad_sequences([comment], maxlen=100, dtype='float32')
-        
-        #comment = np.swapaxes(comment, 1, 2)
-        
+
+        # comment = np.swapaxes(comment, 1, 2)
+
         x = np.array(comment)
         y = model.predict(x)
         d1 = round(y[0][0])
         print(d1)
-    
+
         d2 = round(y[0][1])
         print(d2)
-        
+
         score = '有' if d1 == 1 and d2 == 0 else '沒有'
 
         print("批判性: ", score)
 
+
 if __name__ == '__main__':
-    
     comment_judgements = readFile()
-    
+
     comments, judgements = get_comment_and_judgement(comment_judgements)
-    
+
     word_dataset = build_word_dataset(comment_judgements)
-    
+
     word_index_dict = build_up_word_index_dict(word_dataset)
-    
-    #comments = [comment_to_one_hot(comment, word_dataset) for comment in comments] # old method
+
+    # comments = [comment_to_one_hot(comment, word_dataset) for comment in comments] # old method
     comments = [comment_to_indices(comment, word_index_dict) for comment in comments]
-    
+
     judgements = judge_to_one_hot(judgements)
-    
-    #-----Preaparing the taining and testing data-----
+
+    # -----Preparing the training and testing data-----
     trainAmount = int(len(comments) * 0.6)
     data = pad_sequences(comments, maxlen=max_seq_len, dtype='float32')
     train_data = np.array(data[:trainAmount])
@@ -154,20 +155,19 @@ if __name__ == '__main__':
     test_data = np.array(data[trainAmount:])
     test_labels = np.array(judgements[trainAmount:])
 
-    #train_data = np.swapaxes(train_data, 1, 2)
-    #test_data = np.swapaxes(test_data, 1, 2)
-    
+    # train_data = np.swapaxes(train_data, 1, 2)
+    # test_data = np.swapaxes(test_data, 1, 2)
+
     print("Train Data's shape: ", train_data.shape)
     print("Train Labels' shape: ", train_labels.shape)
     print("Test Data's shape: ", test_data.shape)
     print("Test Labels' shape: ", test_labels.shape)
     print("")
 
-
-    #-----Start training-----
+    # -----Start training-----
     batch_size = 32
     epoch = 50
-    model = build_baseline_model(len(word_index_dict) + 1) # since the first value was not usable
+    model = build_baseline_model(len(word_index_dict) + 1)  # since the first value was not usable
     model.summary()
     train_and_save_model(model, train_data, train_labels, epoch, batch_size)
     loss, accuracy = model.evaluate(test_data, test_labels, batch_size=batch_size)
