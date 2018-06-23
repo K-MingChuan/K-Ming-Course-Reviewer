@@ -7,8 +7,11 @@ from collections import defaultdict
 import jieba
 from keras.layers import *
 from keras.models import Sequential
-from keras.callbacks import ModelCheckpoint
+from keras.callbacks import ModelCheckpoint, EarlyStopping
 from keras.preprocessing.sequence import pad_sequences
+
+from TestCallBacks import ShowTestAccuracyEachEpoch
+import pickle
 
 """# 預設資料"""
 
@@ -18,7 +21,7 @@ max_seq_len = 150
 """## 預處理"""
 
 
-def readFile():
+def readJudgementsFromFile():
     with open("data/judgements.json", 'r', encoding='utf-8') as f:
         judgement = json.load(f)
     return judgement
@@ -95,19 +98,28 @@ def judge_to_one_hot(judgements):
 def build_baseline_model(word_count):
     model = Sequential()
     model.add(Embedding(word_count, 600, input_length=max_seq_len))
-    model.add(LSTM(1500, input_shape=(max_seq_len, 400), return_sequences=True, dropout=0.3, recurrent_dropout=0.1))
-    model.add(LSTM(1500, dropout=0.3, recurrent_dropout=0.1))
+    model.add(Bidirectional(LSTM(1500, return_sequences=True, dropout=0.3, recurrent_dropout=0.1)
+                            , input_shape=(max_seq_len, 400)))
+    model.add(Bidirectional(LSTM(1500, dropout=0.3, recurrent_dropout=0.1)))
     model.add(Dense(2))
     model.add(Activation('softmax'))
     model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
     return model
 
 
-def train_and_save_model(model, data, labels, epoch=20, batch_size=128):
-    filepath = "judgemental_model_weights_e{}_b{}.hdf5".format(epoch, batch_size)
-    checkpoint = ModelCheckpoint(filepath)
-    callbacks_list = [checkpoint]
-    model.fit(data, labels, epochs=epoch, batch_size=batch_size, callbacks=callbacks_list)
+def train_and_save_model(model, train_data, train_labels,
+                         validation_data, validation_labels,
+                         test_data, test_labels,
+                         epoch=20, batch_size=128):
+    filename = "judgemental_model_weights_e{}_b{}".format(epoch, batch_size)
+    checkpoint = ModelCheckpoint(filename + ".hdf5")
+    early_stopping = EarlyStopping(monitor='val_acc', mode='max', patience=2)
+    test_callback = ShowTestAccuracyEachEpoch(test_data, test_labels)
+    callbacks_list = [checkpoint, test_callback, early_stopping]
+    history = model.fit(train_data, train_labels, validation_data=(validation_data, validation_labels),
+                        epochs=epoch, batch_size=batch_size, callbacks=callbacks_list)
+    with open(filename + ".pickle", 'wb') as fw:
+        pickle.dump(history.history, fw)
 
 
 def test_model(comments):
@@ -134,42 +146,44 @@ def test_model(comments):
 
 
 if __name__ == '__main__':
-    comment_judgements = readFile()
-
+    comment_judgements = readJudgementsFromFile()
     comments, judgements = get_comment_and_judgement(comment_judgements)
-
     word_dataset = build_word_dataset(comment_judgements)
-
     word_index_dict = build_up_word_index_dict(word_dataset)
 
-    # comments = [comment_to_one_hot(comment, word_dataset) for comment in comments] # old method
     comments = [comment_to_indices(comment, word_index_dict) for comment in comments]
 
-    judgements = judge_to_one_hot(judgements)
+    judgements = np.array(judge_to_one_hot(judgements))
 
     # -----Preparing the training and testing data-----
     trainAmount = int(len(comments) * 0.6)
     data = pad_sequences(comments, maxlen=max_seq_len, dtype='float32')
-    train_data = np.array(data[:trainAmount])
-    train_labels = np.array(judgements[:trainAmount])
-    test_data = np.array(data[trainAmount:])
-    test_labels = np.array(judgements[trainAmount:])
 
-    # train_data = np.swapaxes(train_data, 1, 2)
-    # test_data = np.swapaxes(test_data, 1, 2)
+    random_mask = np.arange(len(data))
+    np.random.shuffle(random_mask)
+    data = data[random_mask]
+    judgements = judgements[random_mask]
+
+    train_data = data[:trainAmount]
+    train_labels = judgements[:trainAmount]
+    test_data = data[trainAmount:]
+    test_labels = judgements[trainAmount:]
+    validation_data = test_data[:200]
+    validation_labels = test_labels[:200]
 
     print("Train Data's shape: ", train_data.shape)
     print("Train Labels' shape: ", train_labels.shape)
     print("Test Data's shape: ", test_data.shape)
-    print("Test Labels' shape: ", test_labels.shape)
-    print("")
+    print("Test Labels' shape: ", test_labels.shape, "\n")
 
     # -----Start training-----
     batch_size = 32
-    epoch = 50
+    epoch = 30
     model = build_baseline_model(len(word_index_dict) + 1)  # since the first value was not usable
     model.summary()
-    train_and_save_model(model, train_data, train_labels, epoch, batch_size)
+    train_and_save_model(model, train_data, train_labels, validation_data, validation_labels,
+                         test_data, test_labels,
+                         epoch=epoch, batch_size=batch_size)
     loss, accuracy = model.evaluate(test_data, test_labels, batch_size=batch_size)
     print(loss)
     print(accuracy)
