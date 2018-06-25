@@ -1,6 +1,6 @@
 import logging
 
-import jiebas
+#import jiebas
 import numpy
 from gensim.corpora import WikiCorpus
 from gensim.models import word2vec
