@@ -11,6 +11,11 @@ def read_file(filename):
         return json.load(f)
 
 
+def write_other_words_in_word_vector(filename, word):
+    with open(filename + '.txt', 'a+', encoding='utf-8') as f:
+        f.write(word + '\n')
+
+
 def comment_to_word_vectors(comment):
     words = list()
     sentence_words = jieba_utils.cut(comment)
